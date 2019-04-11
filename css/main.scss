@@ -10,22 +10,22 @@ body {
   color: #fff;
   line-height: 1.6;
   height: 100vh;
-  overflow: hidden;  //makni scrolbar sa body-ja
+  overflow: hidden;  //remove scrolbarof the body
 }
 
 .container {
   width: 100%;
   height: 100%;
   /*CSS Smooth Scroll */
-  overflow-y: scroll; // dodaj scrollbar 
-  scroll-behavior: smooth; // postavi smooth scrollanje (nije cross-browser compatible :(
-  scroll-snap-type:y mandatory;
+  overflow-y: scroll; // add a scrollbar to container
+  scroll-behavior: smooth; // set-up smooth scroll (not cross-browser compatible :(
+  scroll-snap-type:y mandatory; // 
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  z-index: 1; //allwasy on top
+  z-index: 1; //allwasy on top of other content
   display: flex;
   width: 100%;
   height: 60px;
@@ -62,7 +62,7 @@ section {
   text-align: center;
   width: 100%;
   height: 100vh; // each section takes the whole vioewport :)
-  scroll-snap-align: center;
+  scroll-snap-align: center; // telling where to apply scroll snap - works with 'scroll-snap-type'
 
   h1 {
     font-size: 4rem;
